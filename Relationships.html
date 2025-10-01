@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+  
+  <meta charset="UTF-8">
+  <title>Relationships</title>
+<link rel="stylesheet" href="css-assignment1.css">
+</head>  
+<body>
+    <div class="nav" id="Navigation">
+     <a href="index.html" class="home">Home</a>
+     <a href="Controversies.html" class = "Controversy">Controversies</a>
+     <div class="dropdown">
+       <button class="drop">Characters</button>
+       <div class="char_drop">
+          <a href="CharHTML.html">Alison DiLaurentis</a>
+          <a href="CharSpen.html">Spencer Hastings</a>
+          <a href="DNR.html">Emily Fields</a>
+         <a href="DNR.html">Hannah Marin</a>
+         <a href="DNR.html">Aria Mongtomery</a>
+       </div>
+     </div>
+     <a href="Relationships.html" class = "relchart">Relationship Chart</a>
+    </div>
+
+
+ 
+      <h1>Relationship Chart!</h1>
+      <hr>
+   
+
+      <div id="rel-body">
+        <p>Pretty Little Liars —like many teen dramas—  is no stranger to <i>large</i> and interconnected webs of relationships. <br>
+        Below you will find an interconnected web of relationships that occur duing the 7 seasons of of the show.
+        </p>
+      </div>
+
+
+        <div id="chart">
+          <img src="https://i.pinimg.com/736x/65/86/65/658665da88536ba5d5437a9580cf711d.jpg" alt="chart" >
+        </div>
+        
+       <div>
+      <p>
+        Clearly, Pretty Little Liars has no shortage of romantic drama. From secret relationships to love triangles to cheating scandals, the show has it all. Whether you're a fan of the main characters or just love a good romance, there's something for everyone in the tangled web of relationships that make up the world of Pretty Little Liars.
+      </p>
+      
+      </div>
+      <div class="Notes">
+        <h3>Important Notes:</h3>
+        <ul class="Comments">
+          <li>
+            <div class="N">
+              <span class="arrow"></span>
+              <span>What Type of Relationships Are Depicted?</span>
+            </div>
+            <div class="a">
+              <p>This chart does not include familial relationships, only romantic ones.</p>
+            </div>
+          </li>  
+          <li>
+            <div class="N">
+              <span class="arrow"></span>
+              <span>What Qualifies a Relationship For This Chart?</span>
+            </div>
+            <div class="a">
+              <p>This chart includes relationships that were shown on screen as well as those that were mentioned, only if the relationship mentioned is meaningful to the story.</p>
+            </div>
+          </li> 
+          <li>
+            <div class="N">
+              <span class="arrow"></span>
+              <span>What Constitutes a Meaningful Mentioned Relationship?</span>
+            </div>
+            <div class="a">
+              <p>A meaninful relationship could include having a child with a character that has never been shown on screen or a character cheating on their partner off screen.</p>
+            </div>
+          </li> 
+           <li>
+            <div class="N">
+              <span class="arrow"></span>
+              <span>What Relationships Are NOT Included?</span>
+            </div>
+            <div class="a">
+              <p>This chart does not include relationships that were only hinted at or implied.</p>
+            </div>
+              <li>
+            <div class="N">
+              <span class="arrow"></span>
+              <span>Why Are Some Dots Dark Blue?</span>
+            </div>
+            <div class="a">
+              <p>This indicates that a side character has had a relationship with two or more of the main characters.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+<script>     
+const q = document.querySelectorAll(".Comments .N");
+const a = document.querySelectorAll(".Comments .a");
+const arrow = document.querySelectorAll(".Comments .arrow");
+for (let i = 0; i < q.length; i++) {
+  q[i].addEventListener("click", () => {
+    a[i].classList.toggle("a-active");
+    arrow[i].classList.toggle("rotate");
+  });
+}
+</script> 
+    </body>
+    <footer>
+    <hr>
+    <p>Created by: Alexandra Hansen</p>
+    <p>Last Updated: Seotember 30, 2025</p>
+  </footer>
+  
+
+    </html>
+
+
