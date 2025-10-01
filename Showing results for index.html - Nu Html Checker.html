@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://validator.w3.org/nu/#file -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="https://validator.w3.org/nu/icon.png" rel="icon"><link href="./Showing results for index.html - Nu Html Checker_files/style.css" rel="stylesheet"><title>Showing results for index.html - Nu Html Checker</title><meta name="viewport" content="width=device-width, initial-scale=1"><style></style><style>.rdp {
+  --rdp-cell-size: 40px;
+  --rdp-accent-color: #0000ff;
+  --rdp-background-color: #e7edff;
+  --rdp-accent-color-dark: #3003e1;
+  --rdp-background-color-dark: #180270;
+  --rdp-outline: 2px solid var(--rdp-accent-color); /* Outline border for focused elements */
+  --rdp-outline-selected: 2px solid rgba(0, 0, 0, 0.75); /* Outline border for focused _and_ selected elements */
+
+  margin: 1em;
+}
+
+/* Hide elements for devices that are not screen readers */
+.rdp-vhidden {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute !important;
+  top: 0;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  border: 0 !important;
+}
+
+/* Buttons */
+.rdp-button_reset {
+  appearance: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  color: inherit;
+  outline: none;
+  background: none;
+  font: inherit;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.rdp-button {
+  border: 2px solid transparent;
+}
+
+.rdp-button[disabled] {
+  opacity: 0.25;
+}
+
+.rdp-button:not([disabled]) {
+  cursor: pointer;
+}
+
+.rdp-button:focus:not([disabled]),
+.rdp-button:active:not([disabled]) {
+  color: inherit;
+  border: var(--rdp-outline);
+  background-color: var(--rdp-background-color);
+}
+
+.rdp-button:hover:not([disabled]) {
+  background-color: var(--rdp-background-color);
+}
+
+.rdp-months {
+  display: flex;
+}
+
+.rdp-month {
+  margin: 0 1em;
+}
+
+.rdp-month:first-child {
+  margin-left: 0;
+}
+
+.rdp-month:last-child {
+  margin-right: 0;
+}
+
+.rdp-table {
+  margin: 0;
+  max-width: calc(var(--rdp-cell-size) * 7);
+  border-collapse: collapse;
+}
+
+.rdp-with_weeknumber .rdp-table {
+  max-width: calc(var(--rdp-cell-size) * 8);
+  border-collapse: collapse;
+}
+
+.rdp-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  text-align: left;
+}
+
+.rdp-multiple_months .rdp-caption {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.rdp-caption_dropdowns {
+  position: relative;
+  display: inline-flex;
+}
+
+.rdp-caption_label {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  padding: 0 0.25em;
+  white-space: nowrap;
+  color: currentColor;
+  border: 0;
+  border: 2px solid transparent;
+  font-family: inherit;
+  font-size: 140%;
+  font-weight: bold;
+}
+
+.rdp-nav {
+  white-space: nowrap;
+}
+
+.rdp-multiple_months .rdp-caption_start .rdp-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.rdp-multiple_months .rdp-caption_end .rdp-nav {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.rdp-nav_button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--rdp-cell-size);
+  height: var(--rdp-cell-size);
+  padding: 0.25em;
+  border-radius: 100%;
+}
+
+/* ---------- */
+/* Dropdowns  */
+/* ---------- */
+
+.rdp-dropdown_year,
+.rdp-dropdown_month {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.rdp-dropdown {
+  appearance: none;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: inherit;
+  opacity: 0;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.rdp-dropdown[disabled] {
+  opacity: unset;
+  color: unset;
+}
+
+.rdp-dropdown:focus:not([disabled]) + .rdp-caption_label,
+.rdp-dropdown:active:not([disabled]) + .rdp-caption_label {
+  border: var(--rdp-outline);
+  border-radius: 6px;
+  background-color: var(--rdp-background-color);
+}
+
+.rdp-dropdown_icon {
+  margin: 0 0 0 5px;
+}
+
+.rdp-head {
+  border: 0;
+}
+
+.rdp-head_row,
+.rdp-row {
+  height: 100%;
+}
+
+.rdp-head_cell {
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: 700;
+  text-align: center;
+  height: 100%;
+  height: var(--rdp-cell-size);
+  padding: 0;
+}
+
+.rdp-tbody {
+  border: 0;
+}
+
+.rdp-tfoot {
+  margin: 0.5em;
+}
+
+.rdp-cell {
+  width: var(--rdp-cell-size);
+  height: 100%;
+  height: var(--rdp-cell-size);
+  padding: 0;
+  text-align: center;
+}
+
+.rdp-weeknumber {
+  font-size: 0.75em;
+}
+
+.rdp-weeknumber,
+.rdp-day {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: var(--rdp-cell-size);
+  max-width: var(--rdp-cell-size);
+  height: var(--rdp-cell-size);
+  margin: 0;
+  border: 2px solid transparent;
+  border-radius: 100%;
+}
+
+.rdp-day_today:not(.rdp-day_outside) {
+  font-weight: bold;
+}
+
+.rdp-day_selected:not([disabled]),
+.rdp-day_selected:focus:not([disabled]),
+.rdp-day_selected:active:not([disabled]),
+.rdp-day_selected:hover:not([disabled]) {
+  color: white;
+  background-color: var(--rdp-accent-color);
+}
+
+.rdp-day_selected:focus:not([disabled]) {
+  border: var(--rdp-outline-selected);
+}
+
+.rdp:not([dir='rtl']) .rdp-day_range_start:not(.rdp-day_range_end) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.rdp:not([dir='rtl']) .rdp-day_range_end:not(.rdp-day_range_start) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.rdp[dir='rtl'] .rdp-day_range_start:not(.rdp-day_range_end) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.rdp[dir='rtl'] .rdp-day_range_end:not(.rdp-day_range_start) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.rdp-day_range_end.rdp-day_range_start {
+  border-radius: 100%;
+}
+
+.rdp-day_range_middle {
+  border-radius: 0;
+}
+</style></head><body><div id="banner"><h1 id="title"><a href="https://validator.w3.org/nu/"><span>Nu Html Checker</span></a></h1></div><p class="disclaimer">This tool is an ongoing experiment in better HTML checking, and its behavior remains subject to change</p><h2 id="top">Showing results for index.html</h2><form method="post" enctype="multipart/form-data"><fieldset><legend>Checker Input</legend><p class="checkboxes">Show <span class="checkboxgroup"><label title="Display the markup source of the input document." for="showsource"><input type="checkbox" name="showsource" id="showsource" value="yes">source</label><label title="Display an outline of the input document." for="showoutline"><input type="checkbox" name="showoutline" id="showoutline" value="yes" checked="checked">outline</label><label title="Display a report about the textual alternatives for images." for="showimagereport"><input type="checkbox" name="showimagereport" id="showimagereport" value="yes">image report</label></span><input id="show_options" type="button" value="Options…"><span class="extraoptions hidden"><span class="checkboxgroup"><label title="Check the content of all responses, including (non-200) error responses"><input type="checkbox" name="checkerrorpages" id="checkerrorpages" value="yes">check error pages</label></span><label id="user-agent-label" title="Specify the user-agent string to send in the document request">User-Agent <input name="useragent" list="useragents" value="Validator.nu/LV https://validator.w3.org/services" disabled=""></label><label id="accept-language-label" title="Specify the accept-language header to send in the document request">Accept-Language <input id="acceptlanguage" name="acceptlanguage" disabled=""></label><datalist id="useragents"><option value="Mozilla/5.0 (Linux; Android 4.4.2; en-us; SC-04E Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile Safari/537.36" label="Android"></option><option value="Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36" label="Chrome"></option><option value="Mozilla/5.0 (Windows NT 6.3; rv:36.0) Gecko/20100101 Firefox/36.0" label="Firefox"></option><option value="Mozilla/5.0 (Windows NT 6.3; Trident/7.0; rv:11.0) like Gecko" label="Internet Explorer"></option><option value="Mozilla/5.0 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25" label="iPhone/iOS Safari"></option><option value="Mozilla/5.0 (Windows NT 6.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36 OPR/28.0.1750.48" label="Opera"></option><option value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/600.4.10 (KHTML, like Gecko) Version/8.0.4 Safari/600.4.10" label="Safari"></option><option value="Validator.nu/LV" label="default"></option></datalist></span></p><div id="inputregion"><label id="inputlabel">Check by<select id="docselect"><option value="">address</option><option value="file">file upload</option><option value="textarea">text input</option></select></label><input type="file" id="doc" name="file" aria-labelledby="docselect" required=""><div id="xnote">Uploaded files with .xhtml or .xht extensions are parsed using the XML parser.</div></div><p><input value="Check" type="submit" id="submit"></p></fieldset></form><section id="filters" class="unexpanded"><div class="message_filtering">Use the Message Filtering button below to hide/show particular messages, and to see total counts of errors and warnings.</div><h2><button class="message_filtering" tabindex="0">Message Filtering</button></h2><fieldset class="hidden"><legend>Warnings (9) · <a href="https://validator.w3.org/nu/" class="hide">Hide all warnings</a> · <a href="https://validator.w3.org/nu/" class="show">Show all warnings</a></legend><ol><li><label><input type="checkbox"><span>A table row was 2 columns wide and exceeded the column count established by the first row (1).</span> (9)</label></li></ol></fieldset></section><script src="./Showing results for index.html - Nu Html Checker_files/script.js.download"></script><div id="results"><ol class=""><li class="info warning" id="vnuId0"><p><strong>Warning</strong>: <span>A table row was 2 columns wide and exceeded the column count established by the first row (1).</span></p><p class="location">From line <span class="first-line">41</span>, column <span class="first-col">51</span>; to line <span class="last-line">42</span>, column <span class="last-col">15</span></p><p class="extract"><code>iller&lt;/td&gt;<b><span class="lf" title="Line break">↩</span>          &lt;/tr&gt;</b><span class="lf" title="Line break">↩</span>     </code></p></li><li class="info warning" id="vnuId1"><p><strong>Warning</strong>: <span>A table row was 2 columns wide and exceeded the column count established by the first row (1).</span></p><p class="location">From line <span class="first-line">45</span>, column <span class="first-col">37</span>; to line <span class="last-line">46</span>, column <span class="last-col">15</span></p><p class="extract"><code> King&lt;/td&gt;<b><span class="lf" title="Line break">↩</span>          &lt;/tr&gt;</b><span class="lf" title="Line break">↩</span>     </code></p></li><li class="info warning" id="vnuId2"><p><strong>Warning</strong>: <span>A table row was 2 columns wide and exceeded the column count established by the first row (1).</span></p><p class="location">From line <span class="first-line">49</span>, column <span class="first-col">69</span>; to line <span class="last-line">50</span>, column <span class="last-col">15</span></p><p class="extract"><code>epard&lt;/td&gt;<b><span class="lf" title="Line break">↩</span>          &lt;/tr&gt;</b>      </code></p></li><li class="info warning" id="vnuId3"><p><strong>Warning</strong>: <span>A table row was 2 columns wide and exceeded the column count established by the first row (1).</span></p><p class="location">From line <span class="first-line">53</span>, column <span class="first-col">96</span>; to line <span class="last-line">54</span>, column <span class="last-col">15</span></p><p class="extract"><code>chell&lt;/td&gt;<b><span class="lf" title="Line break">↩</span>          &lt;/tr&gt;</b><span class="lf" title="Line break">↩</span>     </code></p></li><li class="info warning" id="vnuId4"><p><strong>Warning</strong>: <span>A table row was 2 columns wide and exceeded the column count established by the first row (1).</span></p><p class="location">From line <span class="first-line">57</span>, column <span class="first-col">23</span>; to line <span class="last-line">58</span>, column <span class="last-col">15</span></p><p class="extract"><code>&lt;td&gt;7&lt;/td&gt;<b><span class="lf" title="Line break">↩</span>          &lt;/tr&gt;</b><span class="lf" title="Line break">↩</span>     </code></p></li><li class="info warning" id="vnuId5"><p><strong>Warning</strong>: <span>A table row was 2 columns wide and exceeded the column count established by the first row (1).</span></p><p class="location">From line <span class="first-line">61</span>, column <span class="first-col">25</span>; to line <span class="last-line">62</span>, column <span class="last-col">15</span></p><p class="extract"><code>d&gt;160&lt;/td&gt;<b><span class="lf" title="Line break">↩</span>          &lt;/tr&gt;</b><span class="lf" title="Line break">↩</span>     </code></p></li><li class="info warning" id="vnuId6"><p><strong>Warning</strong>: <span>A table row was 2 columns wide and exceeded the column count established by the first row (1).</span></p><p class="location">From line <span class="first-line">65</span>, column <span class="first-col">66</span>; to line <span class="last-line">66</span>, column <span class="last-col">15</span></p><p class="extract"><code>ision&lt;/td&gt;<b><span class="lf" title="Line break">↩</span>          &lt;/tr&gt;</b><span class="lf" title="Line break">↩</span>     </code></p></li><li class="info warning" id="vnuId7"><p><strong>Warning</strong>: <span>A table row was 2 columns wide and exceeded the column count established by the first row (1).</span></p><p class="location">From line <span class="first-line">69</span>, column <span class="first-col">52</span>; to line <span class="last-line">70</span>, column <span class="last-col">15</span></p><p class="extract"><code>mily)&lt;/td&gt;<b><span class="lf" title="Line break">↩</span>          &lt;/tr&gt;</b><span class="lf" title="Line break">↩</span>     </code></p></li><li class="info warning" id="vnuId8"><p><strong>Warning</strong>: <span>A table row was 2 columns wide and exceeded the column count established by the first row (1).</span></p><p class="location">From line <span class="first-line">73</span>, column <span class="first-col">50</span>; to line <span class="last-line">74</span>, column <span class="last-col">15</span></p><p class="extract"><code> 2017&lt;/td&gt;<b><span class="lf" title="Line break">↩</span>          &lt;/tr&gt;</b><span class="lf" title="Line break">↩</span>     </code></p></li></ol><p class="failure">Document checking completed.</p><section id="headingoutline"><h2>Outline</h2><p class="h1"><span class="headinglevel">&lt;h1&gt;</span> A Loveletter to Trashy TV: Pretty Little Liars</p><p class="h2"><span class="headinglevel">&lt;h2&gt;</span> General Overview:</p><p class="h2"><span class="headinglevel">&lt;h2&gt;</span> The Books:</p></section><div class="details"><p class="msgschema">Used the schema for HTML + SVG 1.1 + MathML 3.0 + RDFa 1.1.</p><p class="msgmediatype">Used the HTML parser.</p></div><p class="stats">Total execution time 5 milliseconds.</p></div><hr><div id="about"><p><a href="https://validator.w3.org/nu/about.html">About this checker</a> • <a href="https://validator.w3.org/nu/about.html#issues">Report an issue</a> • <span class="version">Version: 25.9.25</span></p></div></body></html>
